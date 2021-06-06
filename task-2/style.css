@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?wnyg9g');
+    src:  url('fonts/icomoon.eot?wnyg9g#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?wnyg9g') format('truetype'),
+      url('fonts/icomoon.woff?wnyg9g') format('woff'),
+      url('fonts/icomoon.svg?wnyg9g#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }  
+  .chanpin li span ,
+  .user li span ,
+  .more a ,
+  .m1 a ,
+  .g2 {
+    font-family: 'icomoon';
+  }
+  .ziti span {
+    font-family: 'icomoon';
+    color: #fff;
+    padding-right: 5px;
+  }
+body {
+    background-color: #f3f5f9;
+}
+.w {
+    width: 1200px;
+    margin: auto;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.banner {
+    width: 100%;
+    height: 963px;
+    margin: auto;
+    background: url(images/banner.png) no-repeat center;
+}
+.nav {
+    height: 70px;
+}
+.nav .AGE {
+    float: left;
+    margin: 27px 0 0 5px;
+}
+.nav .chanpin {
+    float: left;
+    margin-left: 76px;
+}
+.nav .user {
+    float: right;
+    margin-right: 100px;
+}
+.chanpin li {
+    float: left;
+    padding: 19px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 23px;
+}
+.user li {
+    float: right;
+    padding: 19px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 23px;
+}
+.jieshao {
+    width: 670px;
+    height: 315px;
+    margin: 300px 0 0 160px;
+    
+}
+.jieshao h3 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 45px;
+}
+.jieshao p {
+    font-size: 15px;
+    color: #e3e1fb;
+}
+.jieshao input {
+    width: 212px;
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 70px;
+    background-color: #088ce2;
+    border: 0px;
+    border-radius: 5px;
+}
+.advance {
+    height: 850px;
+    overflow: hidden;
+}
+.Features {
+    height: 110px;
+    text-align: center;
+    margin-top: 170px;
+}
+.Features h3 {
+    font-size: 29px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #000;
+}
+.Features p {
+    font-size: 16px;
+    color: #666666;
+}
+.more {
+    height: 385px;
+    margin-top: 70px;
+    text-align: center;
+    background-color: #fff;
+}
+.more a {
+    color: #083cc2;
+}
+.more .fpic {
+    float: left;
+    width: 365px;
+    height: 380px;
+}
+.more .fpic .pic1 {
+    margin-top: 40px;
+}
+.more .fpic .f {
+    height: 240px;
+}
+.more .spic {
+    float: left;
+    width: 365px;
+    height: 380px;
+    margin-left: 52px;
+}
+.more .spic .pic2 {
+    margin-top: 38px;
+}
+.more .spic .s {
+    height: 240px;
+}
+.more .tpic {
+    float: right;
+    width: 365px;
+    height: 380px;
+}
+.more .tpic .pic3 {
+    margin-top: 40px;
+}
+.more .tpic .t {
+    height: 240px;
+}
+.fpic .f h3 ,
+.spic .s h3 ,
+.tpic .t h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    padding: 35px;
+}
+.fpic .f p ,
+.spic .s p ,
+.tpic .t p {
+    font-size: 15px;
+    color: #6b6b6b;
+}
+.f a ,
+.s a ,
+.t a {
+    display: inline-block;
+    margin-top: 35px;
+}
+.managing {
+    height: 1325px;
+    overflow: hidden;
+    /* background-color: pink; */
+}
+.managing .En {
+    text-align: center;
+    height: 140px;
+    margin-top: 150px;
+}
+.En h2 {
+    font-size: 35px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.En p {
+    font-size: 19px;
+    color: #666;
+}
+.logo {
+    height: 150px;
+    margin-top: 70px;
+    /* background-color: #fff; */
+}
+.logo span {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+.logo .logo1 {
+    width: 98px;
+    height: 98px;
+    margin-left: 55px;
+    background: url(images/logo.png) no-repeat 28px 28px;
+    border:  1px solid #aaabb9;
+    border-radius: 50%;
+}
+.logo .logo2 {
+    width: 98px;
+    height: 98px;
+    background: url(images/logo.png) no-repeat -210px 28px;
+    border:  1px solid #aaabb9;
+    border-radius: 50%;
+}
+.logo .logo3 {
+    width: 98px;
+    height: 98px;
+    background: url(images/logo.png) no-repeat -450px 28px;
+    border:  1px solid #aaabb9;
+    border-radius: 50%;
+}
+.logo .logo4 {
+    width: 98px;
+    height: 98px;
+    background: url(images/logo.png) no-repeat -693px 28px;
+    border:  1px solid #aaabb9;
+    border-radius: 50%;
+}
+.logo .logo5 {
+    width: 98px;
+    height: 98px;
+    background: url(images/logo.png) no-repeat -934px 28px;
+    border:  1px solid #aaabb9;
+    border-radius: 50%;
+}
+.logo p {
+    float: left;
+    font-size: 21px;
+    color: #7e8083;
+}
+.logo .n1 {
+    padding-left: 50px;
+}
+.logo .n2 {
+    padding-left: 110px;
+}
+.logo .n3 {
+    padding-left: 68px;
+}
+.logo .n4 {
+    padding-left: 110px;
+}
+.logo .n5 {
+    padding-left: 155px;
+}
+.mon {
+    height: 430px;
+}
+.mon .m1 {
+    width: 475px;
+    text-align: center;
+    float: left;
+    margin-top: 130px;
+}
+.m1 h3 {
+    font-size: 35px;
+    font-weight: 400;
+    color: #000;
+}
+.m1 p {
+    font-size: 14px;
+    color: #7b7b7b;
+    margin-top: 40px;
+}
+.m1 .l{
+    text-align: left;
+    margin-top: 0%;
+}
+.m1 a {
+    display: block;
+    float: left;
+    color: #1748c5;
+    margin-top: 40px;
+}
+.mon .cpu {
+    width: 500px;
+    height: 350px;
+    float: right;
+    margin-top: 70px;
+}
+.mon .cpu img {
+    width: 100%;
+}
+.start {
+    height: 180px;
+    box-shadow: 5px 5px rgb(0 ,0 , 0 , .1);
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+.start h3 {
+    font-size: 35px;
+    color: #2050cb;
+    float: left;
+    line-height: 180px;
+    margin-left: 50px;
+}
+.start input {
+    width: 220px;
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+    float: right;
+    margin-top: 65px;
+    margin-right: 50px;
+    background-color: #088ce2;
+    border: 0px;
+    border-radius: 5px;
+}
+.end {
+    height: 500px;
+    border-bottom: 1px solid gray;
+    background-color: #21167f;
+}
+.end div {
+    float: left;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+.end .ziti {
+    margin-top: 20px;
+}
+.end .e1 {
+    width: 305px;
+    height: 205px;
+    margin: 90px 70px 0 150px;
+    background: url(images/AGE.png) no-repeat;
+}
+.e1 p {
+    font-size: 15px;
+    line-height: 28px;
+    color: #fff;
+}
+.e1 .g1 {
+    margin-top: 75px;
+}
+.e1 .g2 {
+    margin-top: 14px;
+}
+.end div dl dd {
+    font-size: 16px;
+    line-height: 35px;
+    color: #fff;
+}
+.end div dl dt {
+    font-size: 24px;
+    line-height: 75px;
+    color: #70abee;
+}
+.none {
+    height: 215px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding-top: 45px;
+    background-color: #21167f;
+}
