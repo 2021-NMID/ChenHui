@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <center>
+        <div>
+            <p class="p1">
+                邮&emsp;箱:<input type="text" id="email" value="" />
+                <span></span>
+            </p>
+            <p>
+                验证码:<input type="text" id="yzm" /><br>
+                <button>发送验证码</button>
+            </p>
+            <p>
+                <input id=log type="submit" value="登录" />
+            </p>
+            <p class="p2">
+                <a href="register.html" id="change">密码登录</a>
+            </p>
+        </div>
+    </center>
+    <script>
+        var email = document.getElementById('email');
+        var yzm = document.getElementById('yzm');
+        var login = document.getElementById('log');
+        var change = document.getElementById('change');
+        var span = document.querySelector('span');
+        var btn = document.querySelector('button');
+        //判断邮箱输入是否正确
+        email.onblur = function () {
+            const content = eval(this).value;
+            var reg = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+            if (!reg.test(content)) {
+                span.innerHTML = '请输入符合规则的邮箱地址';
+                span.style.color = "red";
+                return;
+            }
+            const xhr = new XMLHttpRequest();
+            xhr.open('get', 'http://47.98.192.167:8800/is_repeat?tel=' + content);
+            xhr.send();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        if (xhr.responseText === "ture") {
+                            span.innerHTML = "请输入符合规整的邮箱地址";
+                            span.style.color = "red";
+                        } else {
+                            span.innerHTML = "邮箱格式正确";
+                            span.style.color = "green";
+                        }
+                    }
+                }
+            }
+        }
+        //获取验证码
+        btn.onclick = function () {
+            const content = eval(email).value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', 'http://47.98.192.167:8800/smsXxs?phone=' + content);
+            xhr.send();
+        }
+        login.onclick = function(){
+            const content = eval(email).value;
+            const pin = eval(yzm).value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('post', 'http://47.98.192.167:8800/users/load?pin='+pin+'&tel=' + content);
+            xhr.send();
+        }
+    </script>
+</body>
+
+</html>

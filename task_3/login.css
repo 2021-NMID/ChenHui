@@ -1,0 +1,43 @@
+div
+{
+    width: 300px;
+    height: 400px;
+    margin-top: 250px;
+    margin-left: 1000px;
+    border: 1px solid red;
+    border-radius: 20px;
+    background-color: #69C6D6;
+}
+span{
+    display: block;
+}
+button{
+    margin-left: 30px;
+}
+h2
+{
+    font-family: "微软雅黑";
+    font-size: 40px;
+    color:black;
+}
+#log
+{
+    color:blue;
+}
+body{
+    background-image: url(images/login.png);
+    background-position: left top;
+    background-size: 70% auto; /* 设置背景的大小 */
+    background-repeat: no-repeat; /* 将背景设置为不重复显示 */
+}
+.p1{
+    height: 30px;
+    padding-top: 100px;
+}
+.p2{
+    color: lightcyan;
+   
+}
+a{
+     text-decoration: none;
+}
